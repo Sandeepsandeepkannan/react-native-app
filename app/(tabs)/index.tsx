@@ -6,6 +6,7 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Link } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
+import { BGscreen } from '../screens/bgscreen';
 
 export default function HomeScreen() {
 
@@ -13,24 +14,11 @@ export default function HomeScreen() {
   let x="string";
   x.toString();
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Hiii there 
-      
-        from react
-      </Text>
-    </View>
+    
+      <BGscreen/>
+    
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#ffffff',
-  },
-  text: {
-    fontSize: 24,
-    color: '#000',
-  },
-});
+
+;
